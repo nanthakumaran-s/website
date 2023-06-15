@@ -3,9 +3,10 @@
   --light-white: rgba(255, 255, 255, 0.1);
 }
 
-:root {
+:root,
+:root.light {
   --fg: rgba(0, 0, 0, 0.95);
-  --bg: rgba(255, 255, 255);
+  --bg: rgba(255, 255, 255, 0.9);
   --sec-bg: var(--light-black);
   --nav-bg: rgba(255, 255, 255, 0.3);
   --img-shadow: 6px 6px 12px -6px rgb(0, 0, 0, 0.1),
@@ -19,7 +20,7 @@
   );
 }
 
-/* @media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: dark) {
   :root {
     --fg: rgba(255, 255, 255);
     --bg: rgba(0, 0, 0, 0.95);
@@ -35,7 +36,23 @@
       rgba(43, 22, 29, 0.7) 100%
     );
   }
-} */
+}
+
+:root.dark {
+  --fg: rgba(255, 255, 255);
+  --bg: rgba(0, 0, 0, 0.95);
+  --sec-bg: var(--light-white);
+  --nav-bg: rgba(28, 22, 47, 0.3);
+  --img-shadow: 6px 6px 12px -6px rgb(0 0 0 / 50%),
+    24px 24px 30px -6px rgb(0 0 0 / 50%);
+  --img-shadow-2: 2px 2px 4px -2px rgb(0 0 0 / 50%),
+    24px 24px 30px -6px rgb(0 0 0 / 50%);
+  --hover-bg: linear-gradient(
+    90deg,
+    rgba(30, 28, 50, 0.8) 0%,
+    rgba(43, 22, 29, 0.7) 100%
+  );
+}
 
 body {
   color: var(--fg);
@@ -49,15 +66,18 @@ body {
 body::before {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: 0px;
   z-index: -100;
-  background-image: url("/global/header-gradient.svg"),
-    url("/global/footer-gradient.svg");
+  background-image: url("/global/header-gradient.svg");
   background-repeat: no-repeat;
-  background-position: center top, center bottom;
-  background-size: 1440px;
+  background-position: center top;
+  background-size: 1400px;
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  margin: 0px;
 }

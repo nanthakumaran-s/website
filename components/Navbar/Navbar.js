@@ -1,9 +1,13 @@
+"use client";
+
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import { navLinks, navSocial } from "../../data/nav.data";
-import { LuMoon } from "react-icons/lu";
+import { LuMoon, LuSun } from "react-icons/lu";
+import useColorTheme from "../../hooks/useColorTheme";
 
 export default function Navbar() {
+  const [mode, setMode] = useColorTheme();
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
@@ -21,8 +25,11 @@ export default function Navbar() {
             </a>
           ))}
           <div className={styles.vertical_bar} />
-          <span className={styles.social_icon}>
-            <LuMoon size={20} />
+          <span
+            className={styles.social_icon}
+            onClick={() => setMode(mode === "dark" ? "light" : "dark")}
+          >
+            {mode == "dark" ? <LuSun size={20} /> : <LuMoon size={20} />}
           </span>
         </div>
       </nav>

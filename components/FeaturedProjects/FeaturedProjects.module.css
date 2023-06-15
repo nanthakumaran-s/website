@@ -1,0 +1,20 @@
+.title_row {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.link {
+  font-size: 14px;
+  background: linear-gradient(90deg, #3184ab 0%, #5c82ff 100%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 500;
+}
+
+.link:hover {
+  opacity: 70%;
+  cursor: pointer;
+  transition: all 333ms ease 0s;
+}
