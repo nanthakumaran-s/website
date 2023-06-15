@@ -2,7 +2,7 @@
 
 import styles from "./Navbar.module.css";
 import Link from "next/link";
-import { navLinks, navSocial } from "../../data/nav.data";
+import { getSocials, navLinks } from "../../data/nav.data";
 import { LuMoon, LuSun } from "react-icons/lu";
 import useColorTheme from "../../hooks/useColorTheme";
 
@@ -19,7 +19,7 @@ export default function Navbar() {
           ))}
         </div>
         <div className={styles.social}>
-          {navSocial.map((item, index) => (
+          {getSocials(20).map((item, index) => (
             <a href={item.link} target="blank" key={index}>
               <span className={styles.social_icon}>{item.icon}</span>
             </a>

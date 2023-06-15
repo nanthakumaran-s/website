@@ -2,6 +2,10 @@ import { LuGithub, LuLinkedin, LuTwitter } from "react-icons/lu";
 
 export const navLinks = [
   {
+    displayName: "home",
+    route: "/",
+  },
+  {
     displayName: "works",
     route: "/works",
   },
@@ -23,19 +27,20 @@ export const navLinks = [
   },
 ];
 
-const iconSize = 20;
-
-export const navSocial = [
-  {
-    icon: <LuLinkedin size={iconSize} />,
-    link: "https://www.linkedin.com/in/nanthakumaran-s/",
-  },
-  {
-    icon: <LuGithub size={iconSize} />,
-    link: "https://github.com/nanthakumaran-s",
-  },
-  {
-    icon: <LuTwitter size={iconSize} />,
-    link: "https://twitter.com/nanthakumaran_",
-  },
-];
+export const getSocials = (size) => {
+  const iconSize = size;
+  return [
+    {
+      icon: <LuLinkedin size={iconSize} />,
+      link: "https://www.linkedin.com/in/nanthakumaran-s/",
+    },
+    {
+      icon: <LuGithub size={iconSize} />,
+      link: "https://github.com/nanthakumaran-s",
+    },
+    {
+      icon: <LuTwitter size={iconSize} />,
+      link: "https://twitter.com/nanthakumaran_",
+    },
+  ];
+};

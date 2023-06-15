@@ -63,14 +63,19 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-body::before {
+.wrapper {
+  position: relative;
+}
+
+.wrapper::before {
   content: "";
   position: absolute;
   inset: 0px;
   z-index: -100;
-  background-image: url("/global/header-gradient.svg");
+  background-image: url("/global/header-gradient.svg"),
+    url("/global/footer-gradient.svg");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center top, center bottom;
   background-size: 1400px;
 }
 

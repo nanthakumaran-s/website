@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <div className={styles.main}>
       <section className={styles.section}>
         <ShortIntro />
       </section>
@@ -22,6 +22,6 @@ export default function Home() {
       <section className={styles.section}>
         <ContactBanner />
       </section>
-    </main>
+    </div>
   );
 }
