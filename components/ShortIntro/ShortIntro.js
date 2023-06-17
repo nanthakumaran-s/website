@@ -22,7 +22,7 @@ const ShortIntro = () => {
         learning and challenging myself.
       </p>
       <div className={styles.row}>
-        <Link href="/resume">
+        <Link href="/global/Resume | Nanthakumaran S.pdf" target="_blank">
           <div className={styles.resume_btn}>Resume</div>
         </Link>
       </div>
