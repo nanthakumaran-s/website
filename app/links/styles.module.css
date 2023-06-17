@@ -1,0 +1,12 @@
+.main {
+  width: 708px;
+  margin: 40px auto 0px auto;
+  color: var(--fg);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.section {
+  padding: 16px 0px;
+}

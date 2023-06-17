@@ -9,14 +9,14 @@ export const navLinks = [
     displayName: "works",
     route: "/works",
   },
-  {
-    displayName: "about",
-    route: "/about",
-  },
-  {
-    displayName: "stories",
-    route: "/stories",
-  },
+  // {
+  //   displayName: "about",
+  //   route: "/about",
+  // },
+  // {
+  //   displayName: "stories",
+  //   route: "/stories",
+  // },
   {
     displayName: "stacks",
     route: "/stacks",

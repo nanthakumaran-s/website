@@ -1,0 +1,27 @@
+.link {
+  padding: 22px 20px;
+  display: flex;
+  width: 400px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  border: 1px solid var(--sec-bg);
+  margin: 8px 18px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: var(--fg);
+}
+
+.link:hover {
+  background: var(--hover-bg);
+  border: 1px solid var(--bg);
+  transition: all 333ms ease 0s;
+  cursor: pointer;
+}
+
+.block {
+  display: flex;
+  align-self: center;
+  gap: 15px;
+}

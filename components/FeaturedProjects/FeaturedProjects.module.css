@@ -21,10 +21,8 @@
 }
 
 .projects {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 32px;
   column-gap: 5px;
 }

@@ -1,0 +1,24 @@
+.stacks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  width: fit-content;
+  margin: 0px auto;
+  gap: 8px;
+  padding: 4px;
+}
+
+.stack {
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.img {
+  width: 60px;
+  height: 60px;
+}
+
+.stack:hover {
+  background: var(--hover-bg);
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1) 0s;
+  cursor: pointer;
+}
