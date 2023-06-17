@@ -3,6 +3,7 @@
   flex-direction: row;
   align-items: baseline;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .link {
@@ -17,4 +18,13 @@
   opacity: 70%;
   cursor: pointer;
   transition: all 333ms ease 0s;
+}
+
+.projects {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 32px;
+  column-gap: 5px;
 }

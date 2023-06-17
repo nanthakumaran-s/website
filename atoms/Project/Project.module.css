@@ -1,0 +1,57 @@
+.project {
+  width: 200px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.project:hover {
+  background: var(--hover-bg);
+  transition: all 333ms ease 0s;
+  cursor: pointer;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: var(--img-shadow);
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  width: 100%;
+  text-align: left;
+  margin-top: 14px;
+}
+
+.stacks {
+  width: 100%;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: 30%;
+  letter-spacing: 120%;
+  margin-top: 10px;
+}
+
+.desc {
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+  text-align: left;
+  letter-spacing: -0.25px;
+  opacity: 0.6;
+  margin-top: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

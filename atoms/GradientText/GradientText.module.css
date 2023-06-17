@@ -1,0 +1,7 @@
+.gradient_text {
+  font-size: 42px;
+  background: linear-gradient(40deg, #f06446 20%, #6f7ebb 80%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}

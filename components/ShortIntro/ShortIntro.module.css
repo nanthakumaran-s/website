@@ -3,7 +3,7 @@
   width: 90px;
   border-radius: 1000px !important;
   border: 3px solid var(--bg);
-  box-shadow: var(--img-shadow-2);
+  box-shadow: var(--img-shadow);
 }
 
 .row {

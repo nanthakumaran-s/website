@@ -2,7 +2,9 @@ import React from "react";
 import Link from "next/link";
 
 import styles from "./FeaturedProjects.module.css";
-import SectionTitle from "../Reusable/SectionTitle/SectionTitle";
+import SectionTitle from "../../atoms/SectionTitle/SectionTitle";
+import { featured, works } from "../../data/projects.data";
+import Project from "../../atoms/Project/Project";
 
 const FeaturedProjects = () => {
   return (
@@ -12,6 +14,11 @@ const FeaturedProjects = () => {
         <p className={styles.link}>
           <Link href="/works">All Works ▸</Link>
         </p>
+      </div>
+      <div className={styles.projects}>
+        {featured.map((ind, i) => (
+          <Project work={works[ind]} key={i} />
+        ))}
       </div>
     </React.Fragment>
   );
