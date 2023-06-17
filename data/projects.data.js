@@ -8,7 +8,7 @@ import skillForge from "../public/works/SkillForge.png";
 import twitterBot from "../public/works/Twitter Bot.png";
 import tweetCLI from "../public/works/Tweet CLI.png";
 import cloudOpsMate from "../public/works/CloudOpsMate.png";
-import etlPipeline from "../public/works/Etl Pipeline.png";
+import etlPipeline from "../public/works/ETL Pipeline.png";
 import expenseMate from "../public/works/ExpenseMate.png";
 
 export const works = [
