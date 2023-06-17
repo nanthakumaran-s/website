@@ -4,7 +4,7 @@ import argon from "../public/works/Argon.png";
 import sortingVis from "../public/works/Sorting Visualizer.png";
 import pathFindingVis from "../public/works/Path Finding Visualizer.png";
 import theOwNews from "../public/works/TheOwNews.png";
-import skillForge from "../public/works/Skillforge.png";
+import skillForge from "../public/works/SkillForge.png";
 import twitterBot from "../public/works/Twitter Bot.png";
 import tweetCLI from "../public/works/Tweet CLI.png";
 import cloudOpsMate from "../public/works/CloudOpsMate.png";
