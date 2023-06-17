@@ -1,0 +1,42 @@
+.sidebar {
+  position: fixed;
+  inset: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--nav-bg);
+  border: 1px solid var(--nav-bg);
+  padding: 16px;
+  backdrop-filter: blur(54px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.link_item {
+  color: var(--fg);
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.link_item:hover {
+  opacity: 70%;
+  transition: 0.2s all ease;
+}
+
+.close {
+  position: absolute;
+  top: 5%;
+  right: 18%;
+}

@@ -1,12 +1,11 @@
-"use client";
-
 import styles from "./Navbar.module.css";
 import Link from "next/link";
 import { getSocials, navLinks } from "../../data/nav.data";
 import { LuMoon, LuSun } from "react-icons/lu";
 import useColorTheme from "../../hooks/useColorTheme";
+import { RxHamburgerMenu } from "react-icons/rx";
 
-export default function Navbar() {
+export default function Navbar({ setShow }) {
   const [mode, setMode] = useColorTheme();
   return (
     <header className={styles.header}>
@@ -20,9 +19,9 @@ export default function Navbar() {
         </div>
         <div className={styles.social}>
           {getSocials(20).map((item, index) => (
-            <a href={item.link} target="blank" key={index}>
+            <Link href={item.link} target="blank" key={index}>
               <span className={styles.social_icon}>{item.icon}</span>
-            </a>
+            </Link>
           ))}
           <div className={styles.vertical_bar} />
           <span
@@ -30,6 +29,9 @@ export default function Navbar() {
             onClick={() => setMode(mode === "dark" ? "light" : "dark")}
           >
             {mode == "dark" ? <LuSun size={20} /> : <LuMoon size={20} />}
+          </span>
+          <span className={styles.hamburger} onClick={() => setShow(true)}>
+            <RxHamburgerMenu size={20} />
           </span>
         </div>
       </nav>

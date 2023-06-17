@@ -25,3 +25,10 @@
   align-self: center;
   gap: 15px;
 }
+
+@media screen and (max-width: 770px) {
+  .link {
+    width: 300px;
+    margin: 8px 0px;
+  }
+}

@@ -1,11 +1,18 @@
+"use client";
+
+import { useState } from "react";
+import { Inter } from "next/font/google";
+
+import "./globals.css";
 import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
-import "./globals.css";
-import { Inter } from "next/font/google";
+import SideBar from "../components/SideBar/SideBar";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
+  const [show, setShow] = useState(false);
+
   return (
     <html lang="en">
       <head>
@@ -13,10 +20,11 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <main className="wrapper">
-          <Navbar />
+          <Navbar setShow={setShow} />
           {children}
           <Footer />
         </main>
+        {show && <SideBar setShow={setShow} />}
       </body>
     </html>
   );

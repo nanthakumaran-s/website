@@ -10,3 +10,6 @@
 .page_intro > p:nth-child(1) {
   font-size: 32px;
 }
+
+@media screen and (max-width: 770px) {
+}

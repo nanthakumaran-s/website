@@ -51,3 +51,22 @@
   opacity: 60%;
   transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 770px) {
+  .contact_banner {
+    flex-direction: column-reverse;
+  }
+
+  .banner_img {
+    width: 200px;
+    height: 200px;
+    transform: rotate(-30deg);
+  }
+
+  .inner_left {
+    width: 90%;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+}
