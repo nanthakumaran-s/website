@@ -25,11 +25,11 @@ export const links = [
     link: "https://github.com/nanthakumaran-s",
     icon: <LuGithub size={size} />,
   },
-  {
-    name: "@nanthakumaran_",
-    link: "https://twitter.com/nanthakumaran_",
-    icon: <LuTwitter size={size} />,
-  },
+  // {
+  //   name: "@nanthakumaran_",
+  //   link: "https://twitter.com/nanthakumaran_",
+  //   icon: <LuTwitter size={size} />,
+  // },
   {
     name: "@nanthakumaran-s",
     link: "https://www.youtube.com/@nanthakumaran-s",

@@ -12,14 +12,11 @@ const ShortIntro = () => {
         <Image src={avatarImg} alt="Avatar" className={styles.avatar} />
         <div className={styles.column}>
           <p>Nanthakumaran S</p>
-          <p>Software Developer, Cloud & DevOps Enthusiast</p>
+          <p>Associate Engineer @Presidio | Software, Cloud & Data Engineer | 1x AWS</p>
         </div>
       </div>
       <p className={styles.description}>
-        A passionate full-stack software developer who can build robust
-        applications. If you can&apos;t find me near my computer, you can find
-        me playing chess. I spent most of my time building new applications,
-        learning and challenging myself.
+      Crafting robust solutions in the digital realm, I bring together the artistry of software engineering, the precision of data engineering, and the agility of cloud and DevOps.
       </p>
       <div className={styles.row}>
         <Link href="/global/Resume | Nanthakumaran S.pdf" target="_blank">
