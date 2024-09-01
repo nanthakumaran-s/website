@@ -3,6 +3,7 @@ import python from "../public/stacks/python.png";
 import dart from "../public/stacks/dart.png";
 import typeScript from "../public/stacks/typescript.png";
 import cSharp from "../public/stacks/csharp.png";
+import kotlin from "../public/stacks/kotlin.png";
 import react from "../public/stacks/react.png";
 import next from "../public/stacks/nextjs.png";
 import flutter from "../public/stacks/flutter.png";
@@ -37,6 +38,10 @@ export const stacks = [
   {
     name: "C#",
     img: cSharp,
+  },
+  {
+    name: "Kotlin",
+    img: kotlin,
   },
   {
     name: "React Js",

@@ -25,24 +25,24 @@ export const links = [
     link: "https://github.com/nanthakumaran-s",
     icon: <LuGithub size={size} />,
   },
-  // {
-  //   name: "@nanthakumaran_",
-  //   link: "https://twitter.com/nanthakumaran_",
-  //   icon: <LuTwitter size={size} />,
-  // },
+  {
+    name: "@nanthakumaran_",
+    link: "https://twitter.com/nanthakumaran_",
+    icon: <LuTwitter size={size} />,
+  },
   {
     name: "@nanthakumaran-s",
     link: "https://www.youtube.com/@nanthakumaran-s",
     icon: <LuYoutube size={size} />,
   },
   {
-    name: "nanthakumaran.medium.com",
-    link: "https://nanthakumaran.medium.com/",
-    icon: <SiMedium size={size} />,
-  },
-  {
     name: "blog.nanthakumaran.com",
     link: "https://blog.nanthakumaran.com/",
     icon: <SiHashnode size={size} />,
+  },
+  {
+    name: "nanthakumaran.medium.com",
+    link: "https://nanthakumaran.medium.com/",
+    icon: <SiMedium size={size} />,
   },
 ];

@@ -38,9 +38,9 @@ export const getSocials = (size) => {
       icon: <LuGithub size={iconSize} />,
       link: "https://github.com/nanthakumaran-s",
     },
-    // {
-    //   icon: <LuTwitter size={iconSize} />,
-    //   link: "https://twitter.com/nanthakumaran_",
-    // },
+    {
+      icon: <LuTwitter size={iconSize} />,
+      link: "https://twitter.com/nanthakumaran_",
+    },
   ];
 };

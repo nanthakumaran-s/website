@@ -4,6 +4,7 @@ import React from "react";
 
 import styles from "./ShortIntro.module.css";
 import avatarImg from "../../public/home/avatar.svg";
+import { introData } from "../../data/intro.data";
 
 const ShortIntro = () => {
   return (
@@ -11,16 +12,14 @@ const ShortIntro = () => {
       <div className={styles.row}>
         <Image src={avatarImg} alt="Avatar" className={styles.avatar} />
         <div className={styles.column}>
-          <p>Nanthakumaran S</p>
-          <p>Associate Engineer @Presidio | Software, Cloud & Data Engineer | 1x AWS</p>
+          <p>{introData.name}</p>
+          <p>{introData.desc}</p>
         </div>
       </div>
-      <p className={styles.description}>
-      Crafting robust solutions in the digital realm, I bring together the artistry of software engineering, the precision of data engineering, and the agility of cloud and DevOps.
-      </p>
+      <p className={styles.description}>{introData.descLong}</p>
       <div className={styles.row}>
         <Link href="/global/Resume | Nanthakumaran S.pdf" target="_blank">
-          <div className={styles.resume_btn}>Resume</div>
+          <div className={styles.resume_btn}>{introData.cta}</div>
         </Link>
       </div>
     </React.Fragment>
