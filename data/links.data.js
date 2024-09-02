@@ -36,11 +36,6 @@ export const links = [
     icon: <LuYoutube size={size} />,
   },
   {
-    name: "blog.nanthakumaran.com",
-    link: "https://blog.nanthakumaran.com/",
-    icon: <SiHashnode size={size} />,
-  },
-  {
     name: "nanthakumaran.medium.com",
     link: "https://nanthakumaran.medium.com/",
     icon: <SiMedium size={size} />,
